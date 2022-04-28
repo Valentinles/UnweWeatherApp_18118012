@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:unweweatherapp="clr-namespace:UnweWeatherApp"
+             x:Class="UnweWeatherApp.WeatherForecastPage"
+             Title="Forecast">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle"
+                TargetType="Label">
+                <Setter Property="FontSize"
+                Value="Small" />
+                <Setter Property="TextColor"
+                Value="Orange" />
+            </Style>
+            <Style x:Key="labelResultStyle"
+                TargetType="Label">
+                <Setter Property="FontSize"
+                Value="Medium" />
+                <Setter Property="Margin"
+                Value="10,0,0,0" />
+            </Style>
+            <unweweatherapp:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
+        </ResourceDictionary>
+
+    </ContentPage.Resources>
+    <StackLayout>
+        <Grid BackgroundColor="Orange"
+            Padding="10,20,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="{Binding City.Name}"
+                Grid.Row="1"
+                Grid.ColumnSpan="3"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Medium" />
+            <Label
+                Text="{Binding City.Country}"
+                Grid.Row="1"
+                Grid.ColumnSpan="1"
+                HorizontalOptions="Center"
+                TextColor="White"
+                FontAttributes="Bold"
+                FontSize="Medium" />
+        </Grid>
+        <ListView x:Name="ForecastsList"  
+             HasUnevenRows="True"
+                  ItemTapped="ForecastsList_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="0,10">
+                            <Label Text="Date: " Style="{StaticResource labelStyle}" />
+                            <Label Text="{Binding DtTxt}" Style="{StaticResource labelResultStyle}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

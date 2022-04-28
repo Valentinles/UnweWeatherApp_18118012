@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnweWeatherApp.Android", "UnweWeatherApp\UnweWeatherApp.Android\UnweWeatherApp.Android.csproj", "{A534E7A8-3A94-4544-B438-A623753DDCFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnweWeatherApp", "UnweWeatherApp\UnweWeatherApp\UnweWeatherApp.csproj", "{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A534E7A8-3A94-4544-B438-A623753DDCFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0688A09C-3901-429E-B6B9-C9F73DEC7DB1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08DFDBC2-7D38-4B63-AAD4-CA0B0614875B}
+	EndGlobalSection
+EndGlobal
